@@ -1,0 +1,121 @@
+@import "../../../../styles/responsive.scss";
+
+#header {
+  background-color: #b99782;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      max-width: 180px;
+      flex: 1;
+    }
+
+    .header-right {
+      h2 {
+        color: #fff;
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 84px;
+        text-align: center;
+      }
+      .header-contact {
+        display: flex;
+        justify-content: space-between;
+
+        @include small {
+          flex-direction: column;
+          align-items: center;
+          padding: 0 !important;
+        }
+
+        .contact-info {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          .icon {
+            max-width: 19px;
+          }
+          @include small {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          li {
+            display: flex;
+            align-items: baseline;
+            margin-right: 20px;
+
+            &:last-of-type {
+              margin-right: 50;
+            }
+
+            @include small {
+              align-items: center;
+            }
+
+            a {
+              color: #686159;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 19px;
+
+              @include small {
+                font-size: 12px;
+                line-height: 22px;
+              }
+            }
+
+            .phone-numbers {
+              display: flex;
+              flex-direction: column;
+            }
+
+            img {
+              margin-right: 15px;
+            }
+            .linkdedin {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          li {
+            margin-top: 0;
+
+            &:first-of-type {
+              margin-top: 0;
+            }
+
+            &:last-of-type {
+              margin-right: 0px;
+            }
+
+            img {
+              width: 28px;
+              height: 28px;
+              margin-right: 0;
+              opacity: 0.5;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
