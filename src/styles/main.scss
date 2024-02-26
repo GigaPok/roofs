@@ -3,13 +3,15 @@
 body,
 html {
   font-family: "Noto Sans Georgian", sans-serif;
-  overflow-x: hidden !important;
 }
 span,
 a,
 button,
-h2 {
+h2,
+p,
+div {
   font-family: "Noto Sans Georgian", sans-serif;
+  color: #612e12;
 }
 
 .container {

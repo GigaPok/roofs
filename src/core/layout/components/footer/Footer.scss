@@ -1,3 +1,12 @@
 #footer {
-  background-color: red;
+  background-color: #683b28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  span {
+    padding: 10px 0;
+    color: #fff;
+  }
 }

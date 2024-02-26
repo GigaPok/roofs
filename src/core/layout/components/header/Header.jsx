@@ -11,19 +11,52 @@ import whatsappIcon from "../../../../assets/svg/whatsapp.svg";
 
 export const Header = () => {
   return (
-    <div id="header" className="container">
+    <div id="header">
       {/* <ul>
         <li>
           <NavLink to={about}>About</NavLink>
         </li>
       </ul> */}
-
-      <div className="wrapper">
+      <div className="top-header">
+        <div className="top-header-wrapper ">
+          <div className="content container">
+            <div>833336639</div>
+            <span>Welcome to Oisin Roofing & Guttering</span>
+            <div className="social">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/anigozi22"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={fbIcon} alt="facebook icon" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/anna-kevkhishvili-236604102"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className="linkdedin"
+                      src={whatsappIcon}
+                      alt="whatsapp icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="wrapper container">
         <NavLink>
           <img src={logo} className="logo"></img>
         </NavLink>
+        <h2>KM Construction</h2>
         <div className="header-right">
-          <h2>KM Construction</h2>
           <div className=" header-contact">
             <div className="contact-info">
               <ul>
@@ -34,15 +67,6 @@ export const Header = () => {
                       to="#"
                       onClick={(e) => {
                         window.location.href = "tel:0322888088";
-                        e.preventDefault();
-                      }}
-                    >
-                      (+995) 88888888888
-                    </Link>
-                    <Link
-                      to="#"
-                      onClick={(e) => {
-                        window.location.href = "tel:+995592700010";
                         e.preventDefault();
                       }}
                     >
@@ -70,32 +94,6 @@ export const Header = () => {
                     rel="noreferrer"
                   >
                     KM Construction 0103, USA, Usa
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="social">
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/anigozi22"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={fbIcon} alt="facebook icon" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/anna-kevkhishvili-236604102"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      className="linkdedin"
-                      src={whatsappIcon}
-                      alt="whatsapp icon"
-                    />
                   </a>
                 </li>
               </ul>

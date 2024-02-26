@@ -1,0 +1,15 @@
+.wrapper-button {
+  z-index: 2;
+  #button {
+    background-color: #95563c;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    span {
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}

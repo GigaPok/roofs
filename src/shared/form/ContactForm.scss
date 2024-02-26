@@ -1,0 +1,11 @@
+#form-wrapper {
+  border-radius: 5px;
+  background-color: #06569d;
+  padding: 31px;
+  min-width: 350px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
