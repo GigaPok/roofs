@@ -23,13 +23,15 @@
           line-height: 1.3em;
           font-weight: bold;
           color: #fff;
+          max-width: 840px;
         }
 
         p {
           font-size: 15px;
           color: #fff;
-          line-height: 5px;
-          margin-top: 50px;
+          line-height: 20px;
+          margin-top: 20px;
+          max-width: 660px;
         }
       }
     }
@@ -66,9 +68,10 @@
         margin: 10px 0;
       }
       p {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         margin-bottom: 40px;
+        line-height: 18px;
       }
     }
   }
@@ -80,6 +83,8 @@
     flex-direction: column;
     border-bottom: 1px solid #b48e79;
     padding: 15px;
+    text-align: center;
+    line-height: 20px;
 
     h3 {
       color: #fff;
@@ -87,6 +92,7 @@
       font-weight: 500;
       font-style: normal;
       text-decoration: none solid rgb(34, 34, 34);
+      margin-top: 60px;
     }
 
     span {
@@ -95,6 +101,7 @@
       font-weight: 400;
       font-style: normal;
       text-decoration: none solid rgb(34, 34, 34);
+      max-width: 930px;
     }
 
     img {

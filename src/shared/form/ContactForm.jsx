@@ -4,11 +4,18 @@ import "./ContactForm.scss";
 
 export const ContactForm = () => {
   return (
-    <div>
-      <div id="form-wrapper">
-        <h1>Anywhere in your app!</h1>
+    <div id="contactForm">
+      <div class="form-wrapper">
+        <h6>Free Consultation</h6>
+        <h3>Get A Free Quote</h3>
         <Formik
-          initialValues={{ email: "", password: "" }}
+          initialValues={{
+            email: "",
+            fullname: "",
+            eircode: "",
+            phone: "",
+            message: "",
+          }}
           validate={(values) => {
             const errors = {};
             if (!values.email) {
@@ -39,23 +46,49 @@ export const ContactForm = () => {
           }) => (
             <form onSubmit={handleSubmit}>
               <input
+                type="text"
+                name="fullname"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.fullname}
+                placeholder="Enter your full name"
+              />
+              <input
+                type="text"
+                name="eircode"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.eircode}
+                placeholder="Eircode"
+              />
+              <input
+                type="number"
+                name="phone"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.phone}
+                placeholder="Phone number"
+              />
+              <input
                 type="email"
                 name="email"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
+                placeholder="Your Email"
               />
               {errors.email && touched.email && errors.email}
-              <input
-                type="password"
-                name="password"
+              <textarea
+                type="text"
+                name="message"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.password}
+                value={values.message}
+                placeholder="Message"
               />
               {errors.password && touched.password && errors.password}
               <button type="submit" disabled={isSubmitting}>
-                Submit
+                GET A FREE QUOTE
               </button>
             </form>
           )}

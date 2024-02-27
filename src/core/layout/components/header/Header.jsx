@@ -12,11 +12,6 @@ import whatsappIcon from "../../../../assets/svg/whatsapp.svg";
 export const Header = () => {
   return (
     <div id="header">
-      {/* <ul>
-        <li>
-          <NavLink to={about}>About</NavLink>
-        </li>
-      </ul> */}
       <div className="top-header">
         <div className="top-header-wrapper ">
           <div className="content container">
@@ -52,7 +47,7 @@ export const Header = () => {
         </div>
       </div>
       <div className="wrapper container">
-        <NavLink>
+        <NavLink to={home}>
           <img src={logo} className="logo"></img>
         </NavLink>
         <h2>KM Construction</h2>

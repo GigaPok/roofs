@@ -1,0 +1,75 @@
+#services {
+  .back-img {
+    background-image: url("../../assets/roofing-tile.jpg");
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .opacity {
+      background-color: #14261c;
+      opacity: 0.65;
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      line-height: 1.3em;
+      color: #fff;
+      font-size: 3.4rem;
+      font-weight: 700;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+      z-index: 2;
+    }
+  }
+  .sec-2 {
+    h3 {
+      color: rgb(34, 34, 34);
+      font-size: 37px;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 60px;
+    }
+    p {
+      color: rgb(34, 34, 34);
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 20px;
+      line-height: 1.7em;
+    }
+  }
+  .sec-3 {
+    display: flex;
+    justify-content: space-between;
+    .nested-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .active {
+        background-color: #3e1a0b;
+      }
+
+      a {
+        background-color: #a55f41;
+        min-width: 300px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 15px;
+        color: #fff;
+
+        &:hover {
+          background-color: #3e1a0b;
+        }
+      }
+    }
+  }
+}
