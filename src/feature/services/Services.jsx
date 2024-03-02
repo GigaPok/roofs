@@ -1,10 +1,10 @@
-import React from "react";
-import "./Services.scss";
-import { MainLayout } from "../../core";
-import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
-import { services } from "../../router";
-import { Titleroof } from "./titleroof/Titleroof";
-import { Button } from "../../shared";
+import React from 'react';
+import './Services.scss';
+import { MainLayout } from '../../core';
+import { Link, NavLink, Outlet, Route, Routes } from 'react-router-dom';
+import { services } from '../../router';
+import { Titleroof } from './titleroof/Titleroof';
+import { Button } from '../../shared';
 
 export const Services = () => {
   return (
@@ -38,10 +38,7 @@ export const Services = () => {
             <NavLink to="facia">Facia & Soffits / Guttering</NavLink>
             <NavLink to="lead">Lead Flashing / Chimney Repoint</NavLink>
           </div>
-          <div>
-            <div className="gallery"></div>
-            <Outlet />
-          </div>
+          <Outlet />
         </section>
         <section className="sec-4 container">
           <p>
