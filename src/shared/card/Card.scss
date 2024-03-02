@@ -30,6 +30,10 @@
   background-color: #a55f41;
   width: 100%;
   padding: 15px 0;
+
+  &:hover {
+    background-color: rgba(149, 87, 60, 0.8);
+  }
 }
 
 .oppacity {

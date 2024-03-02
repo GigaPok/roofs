@@ -2,7 +2,7 @@ import React from "react";
 import "../../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 
-export const Titleroof = () => {
+export const Facia = () => {
   const images = [
     {
       original: "https://picsum.photos/id/1018/1000/600/",
