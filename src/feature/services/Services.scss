@@ -1,6 +1,6 @@
 #services {
   .back-img {
-    background-image: url('../../assets/roofing-tile.jpg');
+    background-image: url("../../assets/roofing-tile.jpg");
     min-height: 400px;
     background-position: center;
     background-size: cover;
@@ -9,10 +9,7 @@
     .opacity {
       background-color: #14261c;
       opacity: 0.65;
-      transition:
-        background 0.3s,
-        border-radius 0.3s,
-        opacity 0.3s;
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
       position: absolute;
       top: 0;
       right: 0;
@@ -60,6 +57,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      width: 300px;
 
       .active {
         background-color: #3e1a0b;
