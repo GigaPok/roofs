@@ -7,9 +7,40 @@ import roofting from "../../assets/rooffing.jpg";
 import line from "../../assets/line.png";
 import { Card } from "../../shared/card/Card";
 import { Link } from "react-router-dom";
+import roofingImg from "../../assets/Roofing Services/Tiles  Slate RooFs/image00030.jpeg";
+import paintingImg from "../../assets/Painting Tiling/Interior  exterior  paint/image00010.jpeg";
+import insulationImg from "../../assets/Insulation/EXTERNAL INSULATION/image00005.jpeg";
+import sheedLandImg from "../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00009.jpeg";
+import {
+  SlateTileRoofs,
+  ExteriorInteriorPainting,
+  ExternalInsulation,
+  NewSheedRenew,
+} from "../../router";
 
 export const Home = () => {
-  const array = [1, 2, 3, 4];
+  const array = [
+    {
+      title: "Roofing Services",
+      link: SlateTileRoofs,
+      img: roofingImg,
+    },
+    {
+      title: "Painting / Tiling",
+      link: ExteriorInteriorPainting,
+      img: paintingImg,
+    },
+    {
+      title: "Insulation",
+      link: ExternalInsulation,
+      img: insulationImg,
+    },
+    {
+      title: "Sheed / Landscaping",
+      link: NewSheedRenew,
+      img: sheedLandImg,
+    },
+  ];
   return (
     <MainLayout>
       <div id="home">
@@ -70,8 +101,8 @@ export const Home = () => {
           </span>
           <div className="card-wrapper">
             {array.map((el) => (
-              <Link to={`${services + "/titleroof"}`}>
-                <Card tittle={"Roofing Service"} url={roofting} />
+              <Link to={el.link}>
+                <Card tittle={el.title} url={el.img} />
               </Link>
             ))}
           </div>

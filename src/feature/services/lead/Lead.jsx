@@ -1,31 +1,75 @@
-import React from 'react';
-import '../../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
-import ImageGallery from 'react-image-gallery';
+import React from "react";
+import "../../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+import ImageGallery from "react-image-gallery";
+import img1 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00001.jpeg";
+import img2 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00002.jpeg";
+import img3 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00003.jpeg";
+import img4 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00004.jpeg";
+import img5 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00005.jpeg";
+import img6 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00006.jpeg";
+import img7 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00007.jpeg";
+import img8 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00008.jpeg";
+import img9 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00009.jpeg";
+import img10 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00010.jpeg";
+import img11 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00011.jpeg";
+import img12 from "../../../assets/Roofing Services/Lead FlaShings  Chimney Repoint/image00012.jpeg";
 
 export const Lead = () => {
   const images = [
     {
-      original:
-        'https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-      thumbnail:
-        'https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      original: img1,
+      thumbnail: img1,
     },
     {
-      original:
-        'https://i.pinimg.com/originals/9d/d8/a2/9dd8a2e45080600bbc2e574355cae5ff.jpg',
-      thumbnail:
-        'https://i.pinimg.com/originals/9d/d8/a2/9dd8a2e45080600bbc2e574355cae5ff.jpg',
+      original: img2,
+      thumbnail: img2,
     },
     {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
+      original: img3,
+      thumbnail: img3,
+    },
+    {
+      original: img4,
+      thumbnail: img4,
+    },
+    {
+      original: img5,
+      thumbnail: img5,
+    },
+    {
+      original: img6,
+      thumbnail: img6,
+    },
+    {
+      original: img7,
+      thumbnail: img7,
+    },
+    {
+      original: img8,
+      thumbnail: img8,
+    },
+    {
+      original: img9,
+      thumbnail: img9,
+    },
+    {
+      original: img10,
+      thumbnail: img10,
+    },
+    {
+      original: img11,
+      thumbnail: img11,
+    },
+    {
+      original: img12,
+      thumbnail: img12,
     },
   ];
   return (
     <ImageGallery
       items={images}
       showPlayButton={false}
-      thumbnailPosition={'bottom'}
+      thumbnailPosition={"bottom"}
     />
   );
 };

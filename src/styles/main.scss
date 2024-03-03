@@ -1,8 +1,8 @@
-@import './responsive.scss';
+@import "./responsive.scss";
 
 body,
 html {
-  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: "Noto Sans Georgian", sans-serif;
 }
 span,
 a,
@@ -10,7 +10,7 @@ button,
 h2,
 p,
 div {
-  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: "Noto Sans Georgian", sans-serif;
   color: #612e12;
 }
 
@@ -44,4 +44,8 @@ main {
 // .image-gallery-thumbnail .image-gallery-thumbnail-image {
 //   width: 90px;
 //   height: 54px;
+// }
+
+// .image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
+//   max-width: 1000px;
 // }
