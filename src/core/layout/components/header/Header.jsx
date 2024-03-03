@@ -21,7 +21,7 @@ export const Header = () => {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com/anigozi22"
+                    href="https://www.facebook.com"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -30,7 +30,7 @@ export const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/anna-kevkhishvili-236604102"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
