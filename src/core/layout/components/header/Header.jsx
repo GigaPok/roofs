@@ -16,7 +16,7 @@ export const Header = () => {
         <div className="top-header-wrapper ">
           <div className="content container">
             <div>833336639</div>
-            <span>Welcome to Oisin Roofing & Guttering</span>
+            <span>Welcome to KM Construction</span>
             <div className="social">
               <ul>
                 <li>
