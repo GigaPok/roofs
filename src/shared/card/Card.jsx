@@ -1,12 +1,12 @@
-import React from "react";
-import "./Card.scss";
+import React from 'react';
+import './Card.scss';
 
 export const Card = ({ url, tittle }) => {
   return (
     <div
       id="card"
       style={{
-        background: `url(${url})`,
+        backgroundImage: `url(${url})`,
       }}
     >
       <h2 className="card-tittle">{tittle}</h2>
