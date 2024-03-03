@@ -41,7 +41,7 @@ export const Contact = () => {
                 <img src={location} />
               </span>
               <h3>Dublin</h3>
-              <span>Inniscarra Main Street, Rathcoole, D24 EO29</span>
+              <span>Main Street </span>
             </div>
           </div>
           <div id="contactCard">
@@ -50,13 +50,15 @@ export const Contact = () => {
                 <h6>Make a Call</h6>
               </div>
             </div>
-            <div className="content">
-              <span className="icon">
-                <img src={phone} />
-              </span>
-              <h3>+353 83 333 6639</h3>
-              <span>Mon - Fri: 0-24</span>
-            </div>
+            <a href="tel:+353 89 424 6491">
+              <div className="content">
+                <span className="icon">
+                  <img src={phone} />
+                </span>
+                <h3>+353 89 424 6491</h3>
+                <span>Mon - Fri: 0-24</span>
+              </div>
+            </a>
           </div>
           <div id="contactCard">
             <div>
@@ -64,12 +66,14 @@ export const Contact = () => {
                 <h6>Send a Mail</h6>
               </div>
             </div>
-            <div className="content">
-              <span className="icon">
-                <img src={mail} />
-              </span>
-              <span>info@oisinroofingandguttering.ie4</span>
-            </div>
+            <a href="mailto:Thekmconstruction@gmail.com">
+              <div className="content">
+                <span className="icon">
+                  <img src={mail} />
+                </span>
+                <span>Thekmconstruction@gmail.com</span>
+              </div>
+            </a>
           </div>
         </section>
       </div>

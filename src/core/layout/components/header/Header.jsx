@@ -15,7 +15,7 @@ export const Header = () => {
       <div className="top-header">
         <div className="top-header-wrapper ">
           <div className="content container">
-            <a href="tel:+353894246491">+353894246491</a>
+            <a href="tel:+353894246491">(+353) 89 424 6491</a>
             <span>Welcome to KM Construction</span>
             <div className="social">
               <ul>
@@ -65,7 +65,7 @@ export const Header = () => {
                         e.preventDefault();
                       }}
                     >
-                      (+353) 894246491
+                      (+353) 89 424 6491
                     </Link>
                   </div>
                 </li>
@@ -78,7 +78,7 @@ export const Header = () => {
                       e.preventDefault();
                     }}
                   >
-                    KM Construction@KM.com
+                    Thekmconstruction@gmail.com
                   </Link>
                 </li>
                 <li>
@@ -88,7 +88,7 @@ export const Header = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    KM Construction 0103, USA, Usa
+                    Dublin
                   </a>
                 </li>
               </ul>
