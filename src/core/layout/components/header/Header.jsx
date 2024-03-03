@@ -15,13 +15,13 @@ export const Header = () => {
       <div className="top-header">
         <div className="top-header-wrapper ">
           <div className="content container">
-            <div>833336639</div>
+            <a href="tel:+353894246491">+353894246491</a>
             <span>Welcome to KM Construction</span>
             <div className="social">
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/profile.php?id=61556946293099"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -30,7 +30,7 @@ export const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://wa.me/+353894246491"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -65,7 +65,7 @@ export const Header = () => {
                         e.preventDefault();
                       }}
                     >
-                      (+995) 88888888888
+                      (+353) 894246491
                     </Link>
                   </div>
                 </li>
