@@ -16,7 +16,9 @@ export const Header = () => {
         <div className="top-header-wrapper ">
           <div className="content container">
             <a href="tel:+353894246491">(+353) 89 424 6491</a>
-            <span>Welcome to KM Construction</span>
+            <NavLink to={home}>
+              <span>Welcome to KM Construction</span>
+            </NavLink>
             <div className="social">
               <ul>
                 <li>
