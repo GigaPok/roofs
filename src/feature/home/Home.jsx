@@ -69,25 +69,15 @@ export const Home = () => {
         <section className="sec-2 container">
           <div className="content">
             <h3>About Us</h3>
-            <h2>Liam hennessy:</h2>
             <p>
-              I started a roofing company in my family's name, Hennessy, when I
-              was just 23 years old. After finishing school, I dove headfirst
-              into the trade, working on roofs throughout London and my hometown
-              of Dublin, Ireland. It was common for families in Dublin during
-              the 1950s, 60s, and 70s to have their children working from a
-              young age to make ends meet. My family was no exception; we earned
-              just enough each week to feed and keep warm in our old tenement
-              houses. With work scarce, my brother Tom and I often travelled
-              back and forth to London, where I honed my skills in roof slating,
-              tiling, and installing membrane felts and lead on chimneys and
-              roof valleys. Today, our family business proudly bears the name D.
-              Hennessy Roofing in both our Drumcondra and Clonskeagh offices.
-              People often ask me what the "D" stands for, and I'm happy to say
-              it's my eldest son, Darren, who showed a keen interest in my
-              roofing tools from an early age. He's now a skilled roofer
-              himself, carrying on the Hennessy name as a master craftsman in
-              Dublin and throughout Ireland.
+              Welcome to KM Construction, Ireland's leading provider of
+              top-quality, building services. Based in Dublin and serving
+              clients throughout Ireland, our company has established a solid
+              reputation for delivering professional results, exceptional
+              expertise, and an unparalleled commitment to customer
+              satisfaction. At KMC, we understand the importance of time and
+              efficiency. We pride ourselves on our quick turn around time
+              without compromising the quality of our services.
             </p>
             <Button text={"More"} link={about} onClick={() => scrollUp()} />
           </div>
@@ -112,6 +102,23 @@ export const Home = () => {
                 <Card tittle={el.title} url={el.img} />
               </Link>
             ))}
+          </div>
+          <div className="exp-wrapper">
+            <span>
+              25+
+              <br />
+              Years In Business
+            </span>
+            <span>
+              20K+
+              <br />
+              Happy Clients
+            </span>
+            <span>
+              20K+
+              <br />
+              Projects Completed
+            </span>
           </div>
         </section>
       </div>

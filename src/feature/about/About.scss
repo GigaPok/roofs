@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 #about {
   .back-img {
     background-image: url("../../assets/roofing-tile.jpg");
@@ -27,38 +29,61 @@
       top: 50%;
       transform: translate(50%, -50%);
       z-index: 2;
+
+      @include small {
+        font-size: 2.4rem;
+      }
     }
   }
   .sec-2 {
     margin: 60px 0;
     .wrapper {
       display: flex;
-      .box-1-img {
-        max-width: 600px;
-        margin-right: 25px;
+      @include small {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+      @include small {
+        &:nth-child(2) {
+          margin-top: 30px;
+          flex-direction: column-reverse;
+        }
       }
     }
-    .content {
-      h3 {
-        line-height: 1.3em;
-        font-size: 1rem;
-        font-weight: 700;
-        color: #8c4b36;
+    .box-1-img {
+      max-width: 600px;
+      margin-right: 25px;
+
+      @include small {
+        margin-bottom: 20px;
       }
-      h2 {
-        font-size: 2.2rem;
-        line-height: 1.3em;
-        color: #673b28;
-        font-weight: bold;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-      p {
-        font-size: 15px;
-        color: #000000;
-        line-height: 30px;
-        margin-top: 50px;
-      }
+    }
+  }
+  .content {
+    h3 {
+      line-height: 1.3em;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #8c4b36;
+    }
+    h2 {
+      font-size: 2.2rem;
+      line-height: 1.3em;
+      color: #673b28;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 15px;
+      color: #000000;
+      line-height: 30px;
+      margin-top: 50px;
     }
   }
 }
