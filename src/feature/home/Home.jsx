@@ -57,7 +57,11 @@ export const Home = () => {
                 fix.
               </p>
             </div>
-            <Button text={"contact us"} link={contact} />
+            <Button
+              text={"contact us"}
+              link={contact}
+              onClick={() => scrollUp()}
+            />
           </div>
           <div className="opacity"></div>
           <ContactForm />
@@ -85,7 +89,7 @@ export const Home = () => {
               himself, carrying on the Hennessy name as a master craftsman in
               Dublin and throughout Ireland.
             </p>
-            <Button text={"More"} link={about} />
+            <Button text={"More"} link={about} onClick={() => scrollUp()} />
           </div>
           <div>
             <img src={roofting} alt="roofting" />
