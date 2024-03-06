@@ -130,6 +130,10 @@
       font-style: normal;
       margin-top: 60px;
       text-transform: uppercase;
+
+      @include small {
+        text-align: center;
+      }
     }
   }
 }
