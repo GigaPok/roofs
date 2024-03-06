@@ -68,59 +68,152 @@ export const Services = () => {
               </p>
             </>
           )}
+        </section>
+        <section className="sec-3 container">
+          {pages.roofing === Url && (
+            <div className="nested-wrapper">
+              <NavLink to={SlateTileRoofs}>Slate / Tile RooFs</NavLink>
+              <NavLink to={FlatFiberglasRoofs}>
+                {" "}
+                Flat / Fiberglass RooFs
+              </NavLink>
+              <NavLink to={FaciaSoffitsGuttering}>
+                Facia & Soffits / Guttering
+              </NavLink>
+              <NavLink to={LeadFlashingChimneyRepoint}>
+                Lead Flashing / Chimney Repoint
+              </NavLink>
+            </div>
+          )}
+          {pages.painting === Url && (
+            <div className="nested-wrapper">
+              <NavLink to={ExteriorInteriorPainting}>
+                EXTERIOR / INTERIOR PAINTING
+              </NavLink>
+              <NavLink to={TilingInDoorOutDoor}>
+                TiliNG INDOOR / OUTDOOR
+              </NavLink>
+            </div>
+          )}
+          {pages.insulation === Url && (
+            <div className="nested-wrapper">
+              <NavLink to={ExternalInsulation}>EXTERNAL INSULATION</NavLink>
+              <NavLink to={AtticInsulation}>ATTIC INSULATION</NavLink>
+            </div>
+          )}
+          {pages.sheed === Url && (
+            <div className="nested-wrapper">
+              <NavLink to={NewSheedRenew}>New Sheed / Renew</NavLink>
+            </div>
+          )}
+
+          <Outlet />
+        </section>
+        <section className="sec-4 container">
+          {pages.roofing === Url && (
+            <p>
+              We take the hassle out of finding a roofing company in Dublin for
+              flat roof repair and flat roof installation. We understand it is
+              difficult to choose as there is many roofing company's within
+              Dublin, However we ensure the highest quality work, the most
+              competitive pricing and the highest grade of materials. When you
+              choose KM Construction Roofing as your new roofing company in
+              Dublin, our experienced team do all the hard work for you. Our
+              team will manage the entire project from start to finish –
+              including filling in all the documentation needed and working with
+              your insurance company, if needed. We adhere to Irish building
+              safety regulations We’re fully licensed and insured We are a
+              trusted member of the National Guild of Master Craftsmen We
+              arrange the scaffolding erection/removal We safely remove your old
+              roof and dispose of it properly We make sure your property is left
+              tidy and debris-free when the roof is finished.
+              <br />
+              <br />
+              KM Construction roofing provide flat roof repair and flat roof
+              installations services throughout Dublin North, Dublin South and
+              Dublin county. Our team of expert roofers have over 25 years of
+              experience installing flat roofs, fiberglass roofs, slate and
+              tiled roofs and standard pitch roofs, completely customized and
+              fitted to every job. During the installation of your new roof, our
+              expert roofers can also install gutters and chimneys. We aim to
+              complete your whole project in one go to ensure minimal
+              disruption to your home!
+            </p>
+          )}
           {pages.painting === Url && (
             <>
-              <h3>PAINTiNG / TiliNG</h3>
               {pages.paintingPaint === CustomUrl && (
-                <p>
-                  The KMConstruction has been operating as a painting company
-                  for years, and we have great experience working with what
-                  clients want and need. We pride ourselves on not only on the
-                  quality of our painting services, but also on our customer
-                  service. We are focused on building a relationship with our
-                  clients in order to understand exactly what they want, to
-                  ensure that we can provide the best results. We have numerous
-                  testimonials from previous customers who also feel as though
-                  we have provided them with some of the best painting services
-                  Dublin. Another marker of The KMConstruction ’ quality is our
-                  membership to the Guild of Master Craftsmen. This membership
-                  is a marker of the best painters Dublin. If you are looking
-                  for a highly skilled painter decorator Dublin, you cannot go
-                  past our accredited staff. As a company, we invest in our
-                  staff, to ensure that we can provide our customers with a high
-                  level of service that they can be satisfied with. As a result,
-                  we can offer our clients some of the best professional
-                  painters Dublin. It may seem tempting to try and complete
-                  painting jobs yourself, but we always recommend the use of a
-                  professional painter and decorator, in order to receive the
-                  best quality results. We are also fully covered by
-                  comprehensive liability insurance, so you know that you are
-                  safe in the unlikely event something goes wrong. If you are
-                  still unsure about the quality of The KM Construction , feel
-                  free to browse our online gallery. We have a range of images
-                  of home that we have renovated and redesigned for you to look
-                  at. If you are stuck for ideas for your own space, it may also
-                  help to gain inspiration from looking at some of the things
-                  that we are capable of
-                </p>
+                <h3>EXTERIOR / INTERIOR PAINTING</h3>
               )}
               {pages.paintingTiling === CustomUrl && (
-                <p>
-                  Dublin's Reputable and Effective Tilers Welcome to the KM
-                  Construction. we are one of the leading tilers in Dublin. With
-                  decades of experience, we specialise in providing high-quality
-                  residential and commercial tiling services across Dublin.
-                  Consistency and quality are at the heart of everything we do,
-                  enabling us to become one of the most prestigious tiling
-                  companies in Dublin. With decades of tiling experience, our
-                  dynamic team has met virtually every imaginable tiling
-                  request, established long-term relationships with a host of
-                  customers and suppliers, and developed a service unlike any
-                  tiling company in Dublin. We place customer satisfaction and
-                  efficiency above all else from small jobs to large-scale
-                  projects, ensurir - we achieve a high standards , on
-                  budaet and on time
-                </p>
+                <h3>TiliNG INDOOR / OUTDOOR</h3>
+              )}
+            </>
+          )}
+          {pages.insulation === Url && (
+            <>
+              {pages.attic === CustomUrl && <h3>Attic Insulation</h3>}
+              {pages.external === CustomUrl && <h3>External Insulation</h3>}
+            </>
+          )}
+          {pages.sheed === Url && <h3>SHEED / LANDSCAPING</h3>}
+          {pages.painting === Url && (
+            <>
+              {pages.paintingPaint === CustomUrl && (
+                <>
+                  <p>
+                    The KMConstruction has been operating as a painting company
+                    for years, and we have great experience working with what
+                    clients want and need. We pride ourselves on not only on the
+                    quality of our painting services, but also on our customer
+                    service. We are focused on building a relationship with our
+                    clients in order to understand exactly what they want, to
+                    ensure that we can provide the best results. We have
+                    numerous testimonials from previous customers who also feel
+                    as though we have provided them with some of the best
+                    painting services Dublin. Another marker of The
+                    KMConstruction ’ quality is our membership to the Guild of
+                    Master Craftsmen. This membership is a marker of the best
+                    painters Dublin. If you are looking for a highly skilled
+                    painter decorator Dublin, you cannot go past our accredited
+                    staff. As a company, we invest in our staff, to ensure that
+                    we can provide our customers with a high level of service
+                    that they can be satisfied with. As a result, we can offer
+                    our clients some of the best professional painters Dublin.
+                    It may seem tempting to try and complete painting jobs
+                    yourself, but we always recommend the use of a professional
+                    painter and decorator, in order to receive the best quality
+                    results. We are also fully covered by comprehensive
+                    liability insurance, so you know that you are safe in the
+                    unlikely event something goes wrong. If you are still unsure
+                    about the quality of The KM Construction , feel free to
+                    browse our online gallery. We have a range of images of home
+                    that we have renovated and redesigned for you to look at. If
+                    you are stuck for ideas for your own space, it may also help
+                    to gain inspiration from looking at some of the things that
+                    we are capable of
+                  </p>
+                </>
+              )}
+              {pages.paintingTiling === CustomUrl && (
+                <>
+                  <p>
+                    Dublin's Reputable and Effective Tilers Welcome to the KM
+                    Construction. we are one of the leading tilers in Dublin.
+                    With decades of experience, we specialise in providing
+                    high-quality residential and commercial tiling services
+                    across Dublin. Consistency and quality are at the heart of
+                    everything we do, enabling us to become one of the most
+                    prestigious tiling companies in Dublin. With decades of
+                    tiling experience, our dynamic team has met virtually every
+                    imaginable tiling request, established long-term
+                    relationships with a host of customers and suppliers, and
+                    developed a service unlike any tiling company in Dublin. We
+                    place customer satisfaction and efficiency above all else
+                    from small jobs to large-scale projects, ensurir - we
+                    achieve a high standards , on budaet and on time
+                  </p>
+                </>
               )}
             </>
           )}
@@ -128,7 +221,6 @@ export const Services = () => {
             <>
               {pages.attic === CustomUrl && (
                 <>
-                  <h3>Attic Insulation</h3>
                   <p>
                     Typical insulation materials used are semi-rigid insulation
                     boards as well as glass/mineral fibre. The insulation
@@ -165,7 +257,6 @@ export const Services = () => {
               )}
               {pages.external === CustomUrl && (
                 <>
-                  <h3>External Insulation</h3>
                   <p>
                     The External insulation system can be made from a number of
                     different materials such as expanded polystyrene boards wood
@@ -196,7 +287,6 @@ export const Services = () => {
           )}
           {pages.sheed === Url && (
             <>
-              <h3>SHEED / LANDSCAPING</h3>
               <p>
                 Garden sheds are a must for most garden design. They provide
                 much needed space and protection where the barbecue, lawnmower
@@ -280,73 +370,6 @@ export const Services = () => {
               </p>
             </>
           )}
-        </section>
-        <section className="sec-3 container">
-          {pages.roofing === Url && (
-            <div className="nested-wrapper">
-              <NavLink to={SlateTileRoofs}>Slate / Tile RooFs</NavLink>
-              <NavLink to={FlatFiberglasRoofs}> Flat / Fiberglas RooFs</NavLink>
-              <NavLink to={FaciaSoffitsGuttering}>
-                Facia & Soffits / Guttering
-              </NavLink>
-              <NavLink to={LeadFlashingChimneyRepoint}>
-                Lead Flashing / Chimney Repoint
-              </NavLink>
-            </div>
-          )}
-          {pages.painting === Url && (
-            <div className="nested-wrapper">
-              <NavLink to={ExteriorInteriorPainting}>
-                EXTERIOR / INTERIOR PAINTING
-              </NavLink>
-              <NavLink to={TilingInDoorOutDoor}>
-                TiliNG INDOOR / OUTDOOR
-              </NavLink>
-            </div>
-          )}
-          {pages.insulation === Url && (
-            <div className="nested-wrapper">
-              <NavLink to={ExternalInsulation}>EXTERNAL INSULATION</NavLink>
-              <NavLink to={AtticInsulation}>ATTIC INSULATION</NavLink>
-            </div>
-          )}
-          {pages.sheed === Url && (
-            <div className="nested-wrapper">
-              <NavLink to={NewSheedRenew}>NeW SheeD / ReNew</NavLink>
-            </div>
-          )}
-
-          <Outlet />
-        </section>
-        <section className="sec-4 container">
-          <p>
-            We take the hassle out of finding a roofing company in Dublin for
-            flat roof repair and flat roof installation. We understand it is
-            difficult to choose as there is many roofing company's within
-            Dublin, However we ensure the highest quality work, the most
-            competitive pricing and the highest grade of materials. When you
-            choose KM Construction Roofing as your new roofing company in
-            Dublin, our experienced team do all the hard work for you. Our team
-            will manage the entire project from start to finish – including
-            filling in all the documentation needed and working with your
-            insurance company, if needed. We adhere to Irish building safety
-            regulations We’re fully licensed and insured We are a trusted member
-            of the National Guild of Master Craftsmen We arrange the scaffolding
-            erection/removal We safely remove your old roof and dispose of it
-            properly We make sure your property is left tidy and debris-free
-            when the roof is finished.
-            <br />
-            <br />
-            KM Construction roofing provide flat roof repair and flat roof
-            installations services throughout Dublin North, Dublin South and
-            Dublin county. Our team of expert roofers have over 25 years of
-            experience installing flat roofs, fiberglass roofs, slate and tiled
-            roofs and standard pitch roofs, completely customized and fitted to
-            every job. During the installation of your new roof, our expert
-            roofers can also install gutters and chimneys. We aim to complete
-            your whole project in one go to ensure minimal
-            disruption to your home!
-          </p>
         </section>
       </div>
     </MainLayout>

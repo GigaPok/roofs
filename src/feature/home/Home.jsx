@@ -47,7 +47,7 @@ export const Home = () => {
         <section className="sec-1 container">
           <div className="content-wrapper">
             <div className="text">
-              <h3>Experienced Roofing and Guttering Specialists</h3>
+              <h3>+25 years in construction Experienced builders</h3>
               <p>
                 Need roofing help? Contact us now and our dedicated team will
                 assess the issue and provide the best solution for a stress-free
