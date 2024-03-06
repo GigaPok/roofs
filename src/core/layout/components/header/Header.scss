@@ -15,6 +15,10 @@
         top: 0;
         z-index: 3;
 
+        @include small {
+          text-align: center;
+        }
+
         .social {
           display: flex;
           flex-direction: column;
