@@ -1,15 +1,12 @@
 import React from "react";
 import "./Services.scss";
 import { MainLayout } from "../../core";
-import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import {
   AtticInsulation,
   ExternalInsulation,
   NewSheedRenew,
-  services,
 } from "../../router";
-import { Titleroof } from "./slate/Slate";
-import { Button } from "../../shared";
 import { useLocation } from "react-router-dom";
 
 import {
@@ -26,8 +23,6 @@ export const Services = () => {
   const Url = location.pathname.split("/")[2];
   const CustomUrl = location.pathname.split("/")[3];
 
-  console.log(CustomUrl);
-
   const pages = {
     roofing: "Roofing-Services",
     painting: "Painting-Tiling",
@@ -38,8 +33,6 @@ export const Services = () => {
     external: "External-Insulation",
     sheed: "Sheed-Landscaping",
   };
-
-  const pageChange = location.pathname;
 
   return (
     <MainLayout>

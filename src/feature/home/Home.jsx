@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.scss";
 import { MainLayout } from "../../core";
 import { Button, ContactForm } from "../../shared";
-import { about, contact, services } from "../../router";
+import { about, contact } from "../../router";
 import roofting from "../../assets/rooffing.jpg";
 import line from "../../assets/line.png";
 import { Card } from "../../shared/card/Card";
@@ -41,6 +41,9 @@ export const Home = () => {
       img: sheedLandImg,
     },
   ];
+  const scrollUp = () => {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <MainLayout>
       <div id="home">
@@ -101,7 +104,7 @@ export const Home = () => {
           </span>
           <div className="card-wrapper">
             {array.map((el) => (
-              <Link to={el.link}>
+              <Link to={el.link} onClick={() => scrollUp()}>
                 <Card tittle={el.title} url={el.img} />
               </Link>
             ))}

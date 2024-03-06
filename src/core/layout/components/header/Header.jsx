@@ -10,13 +10,16 @@ import fbIcon from "../../../../assets/svg/facebook.svg";
 import whatsappIcon from "../../../../assets/svg/whatsapp.svg";
 
 export const Header = () => {
+  const scrollUp = () => {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <div id="header">
       <div className="top-header">
         <div className="top-header-wrapper ">
           <div className="content container">
             <a href="tel:+353894246491">(+353) 89 424 6491</a>
-            <NavLink to={home}>
+            <NavLink to={home} onClick={() => scrollUp()}>
               <span>Welcome to KM Construction</span>
             </NavLink>
             <div className="social">
