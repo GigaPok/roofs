@@ -6,7 +6,6 @@ import img2 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00002
 import img3 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00003.jpeg";
 import img4 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00004.jpeg";
 import img5 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00005.jpeg";
-import img6 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00006.png";
 import img7 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00007.jpeg";
 import img8 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00008.jpeg";
 import img9 from "../../../assets/Sheed  Landscaping/NeW SheeD  ReNew/image00009.jpeg";
@@ -36,10 +35,7 @@ export const Sheed = () => {
       original: img5,
       thumbnail: img5,
     },
-    {
-      original: img6,
-      thumbnail: img6,
-    },
+
     {
       original: img7,
       thumbnail: img7,
