@@ -63,7 +63,7 @@ export const Header = () => {
                     <Link
                       to="#"
                       onClick={(e) => {
-                        window.location.href = "tel:0322888088";
+                        window.location.href = "tel:+353894246491";
                         e.preventDefault();
                       }}
                     >
