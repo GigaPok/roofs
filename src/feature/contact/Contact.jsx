@@ -17,7 +17,7 @@ export const Contact = () => {
           </div>
         </section>
         <section className="sec-2 container">
-          <div>
+          <div className="sMap">
             <iframe
               loading="lazy"
               allowfullscreen

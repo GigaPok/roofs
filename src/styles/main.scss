@@ -46,6 +46,8 @@ main {
 //   height: 54px;
 // }
 
-// .image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
-//   max-width: 1000px;
-// }
+.image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
+  @include small {
+    max-width: 370px;
+  }
+}
