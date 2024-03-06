@@ -1,13 +1,16 @@
 import { Formik } from "formik";
-import React from "react";
+import { useState, React } from "react";
 import "./ContactForm.scss";
 
 export const ContactForm = () => {
+  const [sent, setSent] = useState(false);
+
   return (
     <div id="contactForm">
       <div class="form-wrapper">
         <h6>Free Consultation</h6>
         <h3>Get A Free Quote</h3>
+
         <Formik
           initialValues={{
             email: "",
@@ -31,6 +34,7 @@ export const ContactForm = () => {
             setTimeout(() => {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
+              setSent(true);
             }, 400);
           }}
         >
@@ -44,53 +48,64 @@ export const ContactForm = () => {
             isSubmitting,
             /* and other goodies */
           }) => (
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="fullname"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.fullname}
-                placeholder="Enter your full name"
-              />
-              <input
-                type="text"
-                name="eircode"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.eircode}
-                placeholder="Eircode"
-              />
-              <input
-                type="number"
-                name="phone"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.phone}
-                placeholder="Phone number"
-              />
-              <input
-                type="email"
-                name="email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.email}
-                placeholder="Your Email"
-              />
-              {errors.email && touched.email && errors.email}
-              <textarea
-                type="text"
-                name="message"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.message}
-                placeholder="Message"
-              />
-              {errors.password && touched.password && errors.password}
-              <button type="submit" disabled={isSubmitting}>
-                GET A FREE QUOTE
-              </button>
-            </form>
+            <>
+              {!sent && (
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    name="fullname"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.fullname}
+                    placeholder="Enter your full name"
+                  />
+                  <input
+                    type="text"
+                    name="eircode"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.eircode}
+                    placeholder="Eircode"
+                  />
+                  <input
+                    type="number"
+                    name="phone"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.phone}
+                    placeholder="Phone number"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.email}
+                    placeholder="Your Email"
+                  />
+                  {errors.email && touched.email && errors.email}
+                  <textarea
+                    type="text"
+                    name="message"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.message}
+                    placeholder="Message"
+                  />
+                  {errors.password && touched.password && errors.password}
+                  <button type="submit" disabled={isSubmitting}>
+                    GET A FREE QUOTE
+                  </button>
+                </form>
+              )}
+
+              {sent && (
+                <span>
+                  Thanks for contacting us! We will be in touch with you
+                  shortly.
+                </span>
+              )}
+            </>
           )}
         </Formik>
       </div>
