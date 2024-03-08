@@ -89,11 +89,11 @@ export const Header = () => {
                 <li>
                   <img className="icon" src={mapIcon} alt="map icon" />
                   <a
-                    href="https://goo.gl/maps/4VgHf8qHsRdN4MTA9"
+                    href="https://maps.app.goo.gl/qf3PtEQ6bm4Vwdzy7"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Dublin
+                    Ireland, Dublin
                   </a>
                 </li>
               </ul>
