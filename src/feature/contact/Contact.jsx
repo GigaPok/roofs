@@ -22,7 +22,7 @@ export const Contact = () => {
               loading="lazy"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.36595460802!2d-6.410508560536985!3d53.32441163081538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sge!4v1709478731872!5m2!1sen!2sge"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2378.2385939920946!2d-6.355800923264472!3d53.41055897230796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDI0JzM4LjAiTiA2wrAyMScxMS42Ilc!5e0!3m2!1sen!2sie!4v1709905974147!5m2!1sen!2sie"
             ></iframe>
           </div>
           <div>
@@ -41,7 +41,7 @@ export const Contact = () => {
                 <img src={location} />
               </span>
               <h3>Dublin</h3>
-              <span>Main Street </span>
+              <span>205 Bymac Centre Northwest Business Park Ballycoolin</span>
             </div>
           </div>
           <div id="contactCard">

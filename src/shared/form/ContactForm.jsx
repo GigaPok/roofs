@@ -31,10 +31,27 @@ export const ContactForm = () => {
             return errors;
           }}
           onSubmit={(values, { setSubmitting }) => {
+            fetch("/api/index.php", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(values),
+            })
+              .then((response) => {
+                if (response.ok) {
+                  setSent(true);
+                }
+              })
+              .finally(() => {
+                setSent(true);
+              })
+              .catch((error) => {
+                console.error("Error:", error);
+              });
+
             setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
-              setSent(true);
             }, 400);
           }}
         >
